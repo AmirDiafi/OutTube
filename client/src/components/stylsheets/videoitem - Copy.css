@@ -1,0 +1,67 @@
+footer {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    padding :10px;
+    background: #000;
+    color : #999;
+    margin: 0 !important
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0
+}
+
+footer .footer-links a {
+    text-decoration: none !important;
+    font-size: 30px;
+    padding: 10px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+footer .footer-links a.twitter {
+    color: #00acee
+}
+
+footer .footer-links a.linkedin {
+    color: #0e76a8
+}
+
+footer .footer-links a.github {
+    color: #ffffff
+}
+
+footer .footer-links a.youtube {
+    color: red
+}
+
+footer .footer-links a:hover {
+    color: #fff;
+    filter: none
+}
+
+footer .copy {
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top:5px;
+    color: #eee;
+}
+
+footer .copy a {
+    color: inherit;
+    text-decoration: underline
+}
+
+footer .footer-line {
+    position: absolute;
+    display: block;
+    bottom: 0;left:0;
+    height:4px;
+    width:100%;
+    background: linear-gradient(90deg, rgb(199, 13, 13), rgb(196, 196, 11), rgb(11, 207, 11), rgb(11, 201, 207), rgb(40, 11, 207), rgb(191, 11, 207), rgb(207, 11, 76))
+}

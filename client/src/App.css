@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  margin: 0;
+  font-family: 'Comfortaa', cursive !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  padding-bottom: 300px;
+}
+
+.App {
+  overflow: hidden;
+  margin: auto
+}
+
+* {
+  user-select: none
+}
+
+hr {
+    background: linear-gradient(90deg, transparent, #9E9E9E, transparent);
+    border: none !important;
+    height: 1px !important;
+}
+
+.wait-msg span{
+    animation: waiting 1s linear infinite;
+    background: #ccc;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 3px
+}
+
+@keyframes waiting {
+    0%,100% {
+	transform: scale(0)
+    }
+    50% {
+	transform: scale(1.1)
+    }
+}
