@@ -10,7 +10,7 @@ class Header extends React.Component {
     render() {
         return (
             <header>
-		        <img src="https://drive.google.com/uc?export=view&id=18MGoH1ogMFuNBV7UjupZywrPCDCzaCKl" alt="" />
+		<img src="https://drive.google.com/uc?export=view&id=18MGoH1ogMFuNBV7UjupZywrPCDCzaCKl" alt="" />
                 <h1 className="text-center">OutTube</h1>
             </header>
         )
