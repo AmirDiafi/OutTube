@@ -22,13 +22,9 @@ app.get('/api/video_download', (req, res) => {
 	console.log('Sent to Client')
 })
 
-<<<<<<< HEAD
-app.use((req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
-=======
+
 app.use((req, res, next) => {
 	res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
->>>>>>> f2d050b7dfe3a616b8680c43735f1a0bebd0d288
 })
 
 const port = process.env.PORT || 5050
