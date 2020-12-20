@@ -13,10 +13,10 @@ app.get('/api/video_download', (req, res) => {
 	console.log(URL, type, title, quality )
 	if ( type === 'video'&& quality ) {
 		ytdl(URL, { quality }).pipe(res)
-		res.header('Content-Disposition', `attachment; filename="OutTube.mp4"`)
+		res.header('Content-Disposition', `attachment; filename="OutTube-Video.mp4"`)
 	} else if (type === 'audio') {
-		ytdl(URL, { filter: 'audioonly' }).pipe(res)
-		res.header('Content-Disposition', `attachment; filename="OutTube.mp3"`)
+		ytdl(URL).pipe(res)
+		res.header('Content-Disposition', `attachment; filename="OutTube-Audio.mp3"`)
 	}
 
 	console.log('Sent to Client')
